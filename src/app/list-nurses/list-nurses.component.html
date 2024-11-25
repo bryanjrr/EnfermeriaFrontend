@@ -1,0 +1,19 @@
+<section class="container-general">
+    <div class="titulo">
+        <h1>Lista De Enfermeros</h1>
+    </div>
+    <div class="tabla">
+        <table class="tabla-nurses">
+            <tr>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Nombre</th>
+            </tr>
+            <tr class="{{enfermero}}" *ngFor="let enfermero of enfermeros;">
+                <td>{{enfermero[0]}}</td>
+                <td>{{enfermero[1]}}</td>
+                <td>{{enfermero[2]}}</td>
+            </tr>
+        </table>
+    </div>
+</section>
